@@ -3,18 +3,15 @@
 using Lesson;
 
 
-Car car = new Car();
 
 
-car.Drive();
-car.Break();
+var child = new ChildHuman("Child", "ChildSurname", 43);
 
-car.Drive();
-car.Break();
+child.Think();
+child.Cry();
 
-car.Drive();
-car.Drive();
-car.Drive();
-car.Drive();
 
-car.Break();
+var human = new Human("asd", "1eqe", 123);
+
+
+var monkey = new Monkey("monkey", "monkey");
