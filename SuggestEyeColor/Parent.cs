@@ -3,7 +3,7 @@ namespace SuggestEyeColor;
 public class Parent: Human
 {
     private bool isMan = false;
-    public Parent(string name, string eyeColor, bool isMan) : base(name)
+    public Parent(string name, string eyeColor, bool isMan) : base(name, eyeColor)
     {
         this.isMan = isMan;
     }
@@ -13,7 +13,12 @@ public class Parent: Human
     {
         return this.isMan == parent.isMan;
     }
-    
+
+    public new string GetHairColor()
+    {
+        return "BLUE";
+    }
+
     public Child CreateChild(Parent parent, string childName)
     {
         if (isSameGener(parent))
